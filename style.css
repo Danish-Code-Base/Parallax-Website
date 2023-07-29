@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container,
+body,
+html {
+    height: 100%;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.8rem;
+}
+
+.pimg1 {
+    background-image: url(./images/image1.png);
+    min-height: 100%;
+}
+
+.pimg2 {
+    background-image: url(./images/image2.png);
+    min-height: 400px;
+}
+
+.pimg3 {
+    background-image: url(./images/image3.png);
+    min-height: 400px;
+}
+
+.pimg1,
+.pimg2,
+.pimg3 {
+    position: relative;
+    /* overflow: hidden; */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /* background-repeat: no-repeat; */
+}
+
+.ptext {
+    color: white;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    width: 100%;
+    font-size: 26px;
+    letter-spacing: 8px;
+    font-weight: 400;
+}
+
+.ptext span {
+    background-color: #313534;
+    padding: 20px;
+}
+
+.s-one,
+.s-two,
+.s-three {
+    padding: 80px;
+    text-align: center;
+}
+
+.s-one h2,
+.s-two h2,
+.s-three h2 {
+    margin-bottom: 20px;
+}
+
+.light {
+    background-color: #f4f4f4;
+    color: #666;
+}
+
+.dark {
+    background-color: #282e34;
+    color: #ddd;
+}
+
+@media (max-width: 600px) {
+    .ptext {
+        font-size: 16px;
+    }
+
+    .ptext span {
+        padding: 10px;
+    }
+}
